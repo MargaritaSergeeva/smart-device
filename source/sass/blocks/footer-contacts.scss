@@ -31,4 +31,14 @@
   line-height: 25px;
   text-decoration: none;
   color: rgba($main-color, 0.5);
+
+  cursor: pointer;
+  transition: $transition-time $transition-function;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+
+    outline: none;
+  }
 }

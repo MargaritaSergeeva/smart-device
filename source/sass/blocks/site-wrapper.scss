@@ -2,19 +2,20 @@
   background-image: url("../img/main-background@1x.png");
   background-repeat: no-repeat;
   background-size: 1920px auto;
-  background-position: 49% 0%;
+  background-position: 49% 0;
 }
 
 @media (max-width: $width-till-tablet) {
   .site-wrapper {
-    background-size: 1500px auto;
-    background-position: 49.9% -130px;
+    background-image: url("../img/main-background-tablet@1x.png");
+    background-size: 1786px auto;
+    background-position: 37.7% -186px;
   }
 }
 
 @media (max-width: $width-till-mobile) {
   .site-wrapper {
-    background-size: 1450px auto;
-    background-position: 55.5% 96%;
+    background-size: 1700px auto;
+    background-position: 45.8% -186px;
   }
 }
