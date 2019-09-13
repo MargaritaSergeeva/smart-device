@@ -6,8 +6,13 @@
 }
 
 @mixin indent-tablet {
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+@mixin indent-mobile {
+  padding-right: 17px;
+  padding-left: 17px;
 }
 
 @mixin indent {

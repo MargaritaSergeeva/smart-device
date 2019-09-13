@@ -1,14 +1,17 @@
 .button {
   display: block;
+  max-width: 200px;
+  min-width: 180px;
   padding-top: 14px;
   padding-bottom: 13px;
-  padding-left: 25px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  text-align: center;
   text-decoration: none;
   color: #ffffff;
   text-transform: uppercase;
@@ -32,5 +35,14 @@
 
   span {
     position: relative;
+  }
+}
+
+@media (max-width: $width-till-mobile) {
+  .button {
+    &hover {
+      color: #ffffff;
+      border-color: #ffffff;
+    }
   }
 }

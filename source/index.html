@@ -18,8 +18,9 @@
   <div class="site-wrapper">
     <header class="page-header">
       <a class="page-header__logo logo" aria-label="Логотип сайта Smart Device">
-        <svg width="216" height="52" focusable="false" aria-hidden="true">
-          <use class="logo__image" xlink:href="#icon-logo-header"></use>
+        <svg width="202" height="52" focusable="false" aria-hidden="true">
+          <use class="logo__image-header" xlink:href="#icon-logo-header"></use>
+          <use class="logo__logo-header-mobile" xlink:href="#icon-logo-header-mobile"></use>
         </svg>
       </a>
       <nav class="main-nav">
@@ -31,6 +32,7 @@
         </button>
       </nav>
       <section class="main-contacts">
+        <h2 class="visually-hidden">Наши контакты</h2>
         <ul class="main-contacts__list">
           <li class="main-contacts__item">
             <a class="main-contacts__link main-contacts__link--email" href="mailto:info@sd.ru" aria-label="Наша электронная почта">
@@ -49,9 +51,14 @@
             </a>
           </li>
         </ul>
-        <button class="main-contacts__button button" type="button">Заказать звонок</button>
+        <div class="main-contacts__button-wrapper">
+          <a class="main-contacts__button button" href="#">Заказать звонок</a>
+        </div>
       </section>
     </header>
+    <main class="main-page">
+      <h1 class="visually-hidden">Сайт Smart Device - поставка электронных комплектующих, производство печатных плат</h1>
+    </main>
   </div>
 </body>
 </html>

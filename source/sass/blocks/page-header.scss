@@ -10,11 +10,31 @@
 }
 
 .page-header__logo {
-  margin-right: 7.85%;
+  margin-left: 7px;
+  margin-right: 8.35%;
 }
 
 @media (max-width: $width-till-tablet) {
+  .page-header {
+    @include indent-tablet;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .page-header__logo {
     margin-right: auto;
+  }
+}
+
+@media (max-width: $width-till-mobile) {
+  .page-header {
+    @include indent-mobile;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .page-header__logo svg {
+    width: 38px;
+    height: 38px;
   }
 }

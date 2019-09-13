@@ -1,0 +1,13 @@
+.logo__logo-header-mobile {
+  display: none;
+}
+
+@media (max-width: $width-till-mobile) {
+  .logo__logo-header-mobile {
+    display: block;
+  }
+
+  .logo__image-header{
+    display: none;
+  }
+}
