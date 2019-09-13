@@ -1,6 +1,6 @@
 .site-wrapper {
   background-image: url("../img/main-background@1x.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: 1920px auto;
   background-position: 49% 0%;
 }
@@ -8,7 +8,7 @@
 @media (max-width: $width-till-tablet) {
   .site-wrapper {
     background-size: 1500px auto;
-    background-position: 49.9% 90%;
+    background-position: 49.9% -130px;
   }
 }
 

@@ -1,0 +1,61 @@
+.social__list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 16px;
+}
+
+.social__link {
+  position: relative;
+  display: block;
+  width: 27px;
+  height: 27px;
+
+  line-height: 0;
+
+  outline: none;
+
+  cursor: pointer;
+  transition: $transition-time $transition-function;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 27px;
+    height: 27px;
+
+    background-repeat: no-repeat;
+  }
+
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+
+    outline: none;
+  }
+}
+
+.social__link--ok {
+  &::after {
+    background-image: url("../img/icon-ok.svg");
+  }
+}
+
+.social__link--fb {
+  &::after {
+    background-image: url("../img/icon-fb.svg");
+  }
+}
+
+.social__link--vk {
+  &::after {
+    background-image: url("../img/icon-vk.svg");
+  }
+}
