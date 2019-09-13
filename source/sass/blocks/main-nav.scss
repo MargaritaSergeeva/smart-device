@@ -1,0 +1,31 @@
+.main-nav {
+  min-height: 20px;
+  margin-top: 17px;
+  margin-right: auto;
+}
+
+.main-nav__toggle {
+  width: 37px;
+  height: 20px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  cursor: pointer;
+  transition: $transition-time $transition-function;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+
+    outline: none;
+  }
+}
+
+@media (max-width: $width-till-tablet) {
+  .main-nav {
+    margin-right: 30px;
+  }
+}

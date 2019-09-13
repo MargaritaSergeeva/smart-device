@@ -1,3 +1,12 @@
 @import "base/normalize.scss";
+@import "abstracts/variables.scss";
+@import "abstracts/mixins.scss";
 @import "base/scaffolder.scss";
 @import "base/fonts.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/button.scss";
+@import "blocks/site-wrapper.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-contacts.scss";
+

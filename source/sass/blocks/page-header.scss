@@ -1,0 +1,20 @@
+.page-header {
+  @include indent;
+  display: flex;
+  align-items: flex-start;
+  max-width: 1468px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 33px;
+  padding-bottom: 30px;
+}
+
+.page-header__logo {
+  margin-right: 7.85%;
+}
+
+@media (max-width: $width-till-tablet) {
+  .page-header__logo {
+    margin-right: auto;
+  }
+}
