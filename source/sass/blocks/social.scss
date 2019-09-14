@@ -8,6 +8,10 @@
   margin-right: 16px;
 }
 
+.social__item:last-child {
+  margin-right: 0;
+}
+
 .social__link {
   position: relative;
   display: block;
@@ -57,5 +61,15 @@
 .social__link--vk {
   &::after {
     background-image: url("../img/icon-vk.svg");
+  }
+}
+
+@media (max-width: $width-till-tablet) {
+  .social__list {
+    max-width: 200px;
+  }
+
+  .social__item:nth-child(5n) {
+    margin-right: 0;
   }
 }

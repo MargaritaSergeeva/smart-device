@@ -1,8 +1,11 @@
 .copyright {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .copyright__item {
+  margin-right: 10%;
+
   font-size: 13px;
   line-height: 24px;
   text-decoration: none;
@@ -26,4 +29,24 @@
 .copyright__item-developer a {
   color: rgba($main-color, 0.5);
   text-decoration: none;
+}
+
+.copyright__item-developer {
+  margin-right: 0;
+}
+
+@media (max-width: $width-till-tablet) {
+  .copyright__item-protection {
+    display: none;
+  }
+
+  .copyright__item-presence {
+    display: none;
+  }
+}
+
+@media (max-width: $width-till-mobile) {
+  .copyright {
+    flex-direction: column;
+  }
 }

@@ -3,6 +3,7 @@
 }
 
 .footer-contacts__title {
+  margin-top: 0;
   margin-bottom: 25px;
 
   font-family: "Roboto Condensed", "Arial", sans-serif;
@@ -40,5 +41,15 @@
     opacity: 0.5;
 
     outline: none;
+  }
+}
+
+.footer-contacts__toggle {
+  display: none;
+}
+
+@media (max-width: $width-till-tablet) {
+  .footer-contacts {
+    margin-right: 12px;
   }
 }
