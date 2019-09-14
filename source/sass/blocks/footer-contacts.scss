@@ -48,12 +48,6 @@
   display: none;
 }
 
-@media (max-width: $width-till-tablet) {
-  .footer-contacts {
-    margin-right: 12px;
-  }
-}
-
 @media (max-width: $width-till-mobile) {
   .footer-contacts {
     display: flex;
@@ -98,6 +92,12 @@
       opacity: 0.5;
 
       outline: none;
+    }
+  }
+
+  .footer-contacts__phone {
+    &:hover {
+      opacity: 1;
     }
   }
 }

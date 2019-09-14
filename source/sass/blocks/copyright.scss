@@ -1,6 +1,7 @@
 .copyright {
   display: flex;
   flex-wrap: wrap;
+  max-width: 1468px;
   padding-top: 14px;
   padding-bottom: 15px;
   padding-left: 30px;
@@ -32,6 +33,16 @@
 .copyright__item-developer a {
   color: rgba($main-color, 0.5);
   text-decoration: none;
+
+  cursor: pointer;
+  transition: $transition-time $transition-function;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+
+    outline: none;
+  }
 }
 
 .copyright__item-developer {
@@ -68,5 +79,11 @@
   .copyright__item {
     margin-right: 0;
     margin-bottom: 22px;
+  }
+
+  .copyright__item-developer a {
+    &:hover {
+      opacity: 1;
+    }
   }
 }

@@ -1,7 +1,6 @@
 .site-sections {
-  min-width: 350px;
   width: 45.6%;
-  margin-right: auto;
+  min-width: 350px;
   padding-right: 27px;
 }
 
@@ -70,7 +69,6 @@
     align-items: center;
     min-width: 0;
     width: 100%;
-    margin-right: 0;
     padding-top: 25px;
     padding-bottom: 21px;
     padding-left: 15px;
@@ -110,6 +108,12 @@
       opacity: 0.5;
 
       outline: none;
+    }
+  }
+
+  .site-sections__nav-link {
+    &:hover {
+      opacity: 1;
     }
   }
 }

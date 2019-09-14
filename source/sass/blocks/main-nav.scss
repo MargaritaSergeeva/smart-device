@@ -1,8 +1,3 @@
-.main-nav {
-  margin-top: 17px;
-  margin-right: auto;
-}
-
 .main-nav__toggle {
   width: 37px;
   height: 20px;
@@ -23,19 +18,7 @@
   }
 }
 
-@media (max-width: $width-till-tablet) {
-  .main-nav {
-    margin-top: 14px;
-    margin-right: 38px;
-  }
-}
-
 @media (max-width: $width-till-mobile) {
-  .main-nav {
-    margin-top: 7px;
-    margin-right: 27px;
-  }
-
   .main-nav__toggle {
     &:hover {
       opacity: 1;

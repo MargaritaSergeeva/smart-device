@@ -73,3 +73,9 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: $width-till-mobile) {
+  .social__link {
+    opacity: 1;
+  }
+}

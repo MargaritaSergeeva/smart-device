@@ -1,14 +1,13 @@
-.main-contacts {
+.header-contacts {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   max-width: 720px;
   min-width: 600px;
   width: 46.6%;
-  margin-top: 4px;
 }
 
-.main-contacts__list {
+.header-contacts__list {
   @include list-reset;
   display: flex;
   flex-wrap: wrap;
@@ -17,22 +16,22 @@
   padding-top: 13px;
 }
 
-.main-contacts__item {
+.header-contacts__item {
   margin-right: 20px;
   margin-bottom: 10px;
 
   line-height: 0;
 }
 
-.main-contacts__item:first-child {
+.header-contacts__item:first-child {
   margin-right: auto;
 }
 
-.main-contacts__item:last-child {
+.header-contacts__item:last-child {
   margin-right: 0;
 }
 
-.main-contacts__link {
+.header-contacts__link {
   display: inline-flex;
   align-items: center;
   line-height: 18px;
@@ -51,27 +50,36 @@
   }
 }
 
-.main-contacts__link svg {
+.header-contacts__link svg {
   margin-right: 19px;
 }
 
-.main-contacts__button-wrapper {
+.header-contacts__link--email svg {
+  width: 19px;
+  height: 14px;
+}
+
+.header-contacts__link--phone svg {
+  width: 18px;
+  height: 18px;
+}
+
+.header-contacts__button-wrapper {
   margin-left: auto;
 }
 
-.main-contacts__button {
+.header-contacts__button {
   margin-bottom: 10px;
 }
 
 @media (max-width: $width-till-tablet) {
-  .main-contacts {
+  .header-contacts {
     min-width: 0;
     max-width: 200px;
     width: auto;
-    margin-top: 12px;
   }
 
-  .main-contacts__list {
+  .header-contacts__list {
     align-items: center;
     width: auto;
     min-width: 0;
@@ -79,60 +87,59 @@
     padding-top: 0;
   }
 
-  .main-contacts__item {
+  .header-contacts__item {
     margin-right: 33px;
   }
 
-  .main-contacts__item:first-child {
+  .header-contacts__item:first-child {
     margin-right: 33px;
   }
 
-  .main-contacts__item:last-child {
+  .header-contacts__item:last-child {
     margin-right: 0;
   }
 
-  .main-contacts__item:nth-child(4n) {
+  .header-contacts__item:nth-child(4n) {
     margin-right: 0;
   }
 
-  .main-contacts__link span {
+  .header-contacts__link span {
     display: none;
   }
 
-  .main-contacts__link svg {
+  .header-contacts__link svg {
     margin-right: 0;
   }
 
-  .main-contacts__link--email svg {
+  .header-contacts__link--email svg {
     width: 25.33px;
     height: 18.67px;
   }
 
-  .main-contacts__link--phone svg {
+  .header-contacts__link--phone svg {
     width: 24px;
     height: 24px;
   }
 
-  .main-contacts__button {
+  .header-contacts__button {
     display: none;
   }
 }
 
 @media (max-width: $width-till-mobile) {
-  .main-contacts {
+  .header-contacts {
     max-width: 100px;
-    margin-top: 5px;
   }
 
-  .main-contacts__item {
+  .header-contacts__item {
     margin-right: 22px;
   }
 
-  .main-contacts__item:first-child {
+  .header-contacts__item:first-child {
     margin-right: 22px;
   }
 
-  .main-contacts__link {
+  .header-contacts__link {
     &:hover {
       opacity: 1;
     }
