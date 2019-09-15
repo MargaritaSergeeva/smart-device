@@ -5,10 +5,10 @@
 .page-footer__wrapper {
   @include indent;
   display: flex;
-  max-width: 1468px;
+  max-width: 1474px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 44px;
+  margin-bottom: 43px;
   padding-top: 65px;
   padding-bottom: 15px;
 }
@@ -16,7 +16,7 @@
 .page-footer__wrapper-logo-social {
   max-width: 216px;
   margin-right: auto;
-  margin-left: 5px;
+  margin-left: 12px;
 }
 
 .page-footer__logo {
@@ -42,7 +42,6 @@
 }
 
 .page-footer__copyright {
-  @include indent;
   margin-right: auto;
   margin-left: auto;
 }
@@ -131,7 +130,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 45px;
+    padding-top: 46px;
     padding-bottom: 53px;
 
     border-bottom: none;

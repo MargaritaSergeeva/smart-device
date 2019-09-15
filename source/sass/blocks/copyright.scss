@@ -4,7 +4,8 @@
   max-width: 1468px;
   padding-top: 14px;
   padding-bottom: 15px;
-  padding-left: 30px;
+  padding-left: 35px;
+  padding-right: 23px;
 }
 
 .copyright__item {
@@ -28,6 +29,13 @@
 
 .copyright__item-confidentiality {
   margin-right: auto;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+
+    outline: none;
+  }
 }
 
 .copyright__item-developer a {
@@ -82,6 +90,12 @@
   }
 
   .copyright__item-developer a {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .copyright__item-confidentiality {
     &:hover {
       opacity: 1;
     }

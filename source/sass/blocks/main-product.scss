@@ -9,7 +9,7 @@
 
   overflow: hidden;
 
-  &:after {
+  &::after {
     content: "Cкролл вниз";
     position: absolute;
     bottom: 126px;
@@ -26,7 +26,6 @@
 .main-product__text-wrapper {
   display: flex;
   flex-direction: column;
-  width: 718px;
   width: 50.2%;
   margin-right: auto;
   padding-top: 57px;
@@ -58,7 +57,7 @@
   line-height: 34px;
   color: $third-color;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 16px;
@@ -77,6 +76,10 @@
   margin-bottom: 10px;
 }
 
+.main-product__button-text-mobile {
+  display: none;
+}
+
 .main-product__img-wrapper {
   min-width: 705px;
   margin-bottom: -101px;
@@ -89,7 +92,7 @@
 
     overflow: hidden;
 
-    &:after {
+    &::after {
       display: none;
     }
   }
@@ -113,7 +116,7 @@
     font-size: 18px;
     line-height: 27px;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       top: 15px;
@@ -130,10 +133,6 @@
     width: 379px;
     margin-left: 51px;
     margin-bottom: 10px;
-  }
-
-  .main-product__button-text-mobile {
-    display: none;
   }
 
   .main-product__img-wrapper {
@@ -165,12 +164,12 @@
   }
 
   .main-product p {
-    margin-bottom: 43px;
+    margin-bottom: 40px;
     padding-left: 52px;
     padding-right: 0;
 
     font-size: 16px;
-    line-height: 24px;
+    line-height: 25px;
   }
 
   .main-product a {
