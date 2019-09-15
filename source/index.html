@@ -36,7 +36,7 @@
         <ul class="header-contacts__list">
           <li class="header-contacts__item">
             <a class="header-contacts__link header-contacts__link--email" href="mailto:info@sd.ru" aria-label="Наша электронная почта">
-              <svg width="19" height="14" focusable="false" aria-hidden="true">
+              <svg focusable="false" aria-hidden="true">
                 <use class="header-contacts__link-icon" xlink:href="#icon-mail"></use>
               </svg>
               <span>info@sd.ru</span>
@@ -59,12 +59,15 @@
     <main class="main-page">
       <h1 class="visually-hidden">Сайт Smart Device - поставка электронных комплектующих, производство печатных плат</h1>
       <section class="main-page__main-product main-product">
-        <div>
+        <div class="main-product__text-wrapper">
           <h2>Печатные платы</h2>
           <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a href="#">Получить бесплатную консультацию</a>
+          <a class="main-product__button button button--blue" href="#">
+            <span class="main-product__button-text">Получить бесплатную консультацию</span>
+            <span class="main-product__button-text-mobile">Бесплатная консультация</span>
+          </a>
         </div>
-        <div>
+        <div class="main-product__img-wrapper">
           <picture>
             <source type="image/webp" srcset="img/circuit-board@1x.webp 1x">
             <img src="img/circuit-board@1x.png" srcset="" width="705" height="515" alt="Печатные платы">
@@ -146,5 +149,6 @@
       </div>
     </footer>
   </div>
+  <script src="js/picturefill.js"></script>
 </body>
 </html>

@@ -1,7 +1,5 @@
 .button {
   display: block;
-  max-width: 200px;
-  min-width: 180px;
   padding-top: 14px;
   padding-bottom: 13px;
   padding-left: 10px;
@@ -26,8 +24,7 @@
 
   &:hover,
   &:focus {
-    color: rgba(#ffffff, 0.5);
-    border-color: rgba(#ffffff, 0.5);
+    opacity: 0.5;
 
     outline: none;
   }
@@ -38,11 +35,21 @@
   }
 }
 
+.button--blue {
+  padding-top: 18px;
+  padding-bottom: 18px;
+
+  font-size: 16px;
+  line-height: 19px;
+
+  background-color: $second-color;
+  border: none;
+}
+
 @media (max-width: $width-till-mobile) {
   .button {
     &hover {
-      color: #ffffff;
-      border-color: #ffffff;
+      opacity: 1;
     }
   }
 }

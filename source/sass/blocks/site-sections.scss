@@ -55,7 +55,7 @@
   display: none;
 }
 
-@media (max-width: $width-till-tablet) {
+@media (max-width: 1200px) {
   .site-sections__nav {
     display: flex;
     flex-direction: column;

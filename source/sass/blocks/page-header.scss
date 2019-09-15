@@ -5,6 +5,7 @@
   max-width: 1468px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 136px;
   padding-top: 33px;
   padding-bottom: 30px;
 }
@@ -26,6 +27,7 @@
 @media (max-width: $width-till-tablet) {
   .page-header {
     @include indent-tablet;
+    margin-bottom: 21px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -48,6 +50,7 @@
 @media (max-width: $width-till-mobile) {
   .page-header {
     @include indent-mobile;
+    margin-bottom: 19px;
     padding-top: 17px;
     padding-bottom: 17px;
   }
