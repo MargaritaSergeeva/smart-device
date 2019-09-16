@@ -1,0 +1,52 @@
+.info {
+  position: relative;
+  max-width: 1265px;
+  padding-top: 75px;
+  padding-bottom: 60px;
+  padding-left: 245px;
+  padding-right: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 80px;
+    left: 34px;
+
+    width: 220px;
+    height: 317px;
+
+    line-height: 0;
+
+    background-image: url("../img/icon-year.svg");
+    background-repeat: no-repeat;
+    background-size: 220px auto;
+  }
+}
+
+.info h2 {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.info p {
+  margin: 0;
+  margin-bottom: 21px;
+
+  color: #666666;
+}
+
+.info p:last-of-type {
+  margin-bottom: 39px;
+}
+
+.info__button {
+  width: 18.3%;
+  max-width: 300px;
+  margin-right: auto;
+}

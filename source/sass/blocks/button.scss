@@ -46,6 +46,16 @@
   border: none;
 }
 
+.button--third {
+  padding-top: 14px;
+  padding-bottom: 13px;
+
+  color: $second-color;
+
+  background-color: transparent;
+  border: 1px solid $second-color;
+}
+
 @media (max-width: $width-till-mobile) {
   .button {
     &:hover {
