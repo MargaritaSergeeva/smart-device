@@ -117,6 +117,8 @@
     padding-bottom: 19px;
     padding-left: 26px;
     padding-right: 20px;
+
+    border-left-width: 2px;
   }
 
   .advantages__item-icon {
@@ -160,6 +162,25 @@
 }
 
 @media (max-width: $width-till-mobile) {
+  .advantages {
+    padding-left: 14px;
+    padding-right: 16px;
+  }
+
+  .advantages__list {
+    flex-direction: column;
+  }
+
+  .advantages__item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 26px;
+    padding-right: 15px;
+  }
+
   .advantages__item:hover {
     background-color: transparent;
     border-color: #EBEBEB;
@@ -177,8 +198,43 @@
       color: $main-color;
     }
   }
-}
 
-@media (max-width: $width-till-mobile) {
+  .advantages__item--сonfidentiality {
+    padding-bottom: 18px;
+  }
 
+  .advantages__item--provider {
+    padding-right: 10px;
+  }
+
+  .advantages__item--cost .advantages__item-icon {
+    margin-bottom: 9px;
+  }
+
+  .advantages__item--cost .advantages__item-title {
+    margin-bottom: 11px;
+  }
+
+  .advantages__item--сonfidentiality  .advantages__item-title {
+    margin-bottom: 0;
+  }
+
+  .advantages__item--сonfidentiality  .advantages__item-text {
+    margin-top: -6px;
+  }
+
+  .advantages__item-icon {
+    margin-bottom: 12px;
+  }
+
+  .advantages__item-title {
+    margin-bottom: 8px;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .advantages__item-text {
+    min-height: 99px;
+  }
 }
