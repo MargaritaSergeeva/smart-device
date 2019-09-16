@@ -24,6 +24,7 @@
 .services ul {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   width: 97.1%;
   margin-left: auto;
 }
@@ -109,22 +110,74 @@
   }
 }
 
-@media (max-width: $width-till-tablet) {
-  .services {
-    display: flex;
+@media (max-width: 1260px) {
+  .services ul {
     flex-direction: column;
-    max-width: 1265px;
-    padding-top: 89px;
-    padding-bottom: 127px;
-    padding-right: 31px;
-    padding-left: 30px;
+    width: 100%;
+    margin-left: 0;
   }
 
-  .services ul {
-    @include list-reset;
-    display: flex;
-    flex-direction: column;
-    width: 97.1%;
-    margin-left: auto;
+  .services li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 46px;
+  }
+
+  .services a {
+    min-height: 256px;
+    padding-top: 40px;
+    padding-bottom: 13px;
+    padding-left: 44px;
+    padding-right: 510px;
+
+    background-size: cover;
+  }
+
+  .services li:first-of-type {
+    padding-right: 5px;
+  }
+
+  .services li:first-of-type a {
+    background-image: url("../img/services-background-board-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../img/services-background-board-tablet@2x.png");
+    }
+  }
+
+  .services li:nth-of-type(2) a {
+    background-image: url("../img/services-background-board2-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../img/services-background-board2-tablet@2x.png");
+    }
+  }
+
+  .services li:nth-of-type(3) a {
+    padding-top: 50px;
+    background-image: url("../img/services-background-board3-tablet@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../img/services-background-board3-tablet@2x.png");
+    }
+  }
+}
+
+@media (max-width: $width-till-tablet) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 32px;
+    padding-right: 24px;
+    padding-left: 26px;
+  }
+
+  .services h2 {
+    width: 100%;
+    margin-bottom: 49px;
+    margin-left: 0;
+    padding-right: 100px;
+
+    font-size: 32px;
+    line-height: 45px;
   }
 }
