@@ -52,7 +52,7 @@
 
 .advantages__item-icon {
   display: block;
-  width: 35px;
+  width: 36px;
   height: 35px;
   margin-bottom: 19px;
 
@@ -61,6 +61,26 @@
 
 .advantages__item-icon svg {
   fill: $second-color;
+}
+
+.advantages__item--time svg {
+  width: 29px;
+  height: 35px;
+}
+
+.advantages__item--provider svg {
+  width: 35px;
+  height: 35px;
+}
+
+.advantages__item--сonfidentiality svg {
+  width: 36px;
+  height: 31px;
+}
+
+.advantages__item--cost svg {
+  width: 35px;
+  height: 35px;
 }
 
 .advantages__item-title {
@@ -77,6 +97,66 @@
 .advantages__item-text {
   min-height: 88px;
   margin: 0;
+}
+
+@media (max-width: $width-till-tablet) {
+  .advantages {
+    padding-left: 24px;
+    padding-right: 25px;
+  }
+
+  .advantages__list {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .advantages__item {
+    width: 48%;
+    margin-bottom: 30px;
+    padding-top: 24px;
+    padding-bottom: 19px;
+    padding-left: 26px;
+    padding-right: 20px;
+  }
+
+  .advantages__item-icon {
+    margin-bottom: 7px;
+  }
+
+  .advantages__item--сonfidentiality {
+    padding-top: 26px;
+  }
+
+  .advantages__item--сonfidentiality .advantages__item-icon {
+    margin-bottom: 4px;
+  }
+
+  .advantages__item--сonfidentiality  .advantages__item-title {
+    margin-bottom: 14px;
+  }
+
+  .advantages__item--provider svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .advantages__item--сonfidentiality svg {
+    width: 31px;
+    height: 26px;
+  }
+
+  .advantages__item--cost svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .advantages__item-title {
+    margin-bottom: 8px;
+  }
+
+  .advantages__item-text {
+    min-height: 99px;
+  }
 }
 
 @media (max-width: $width-till-mobile) {
@@ -97,4 +177,8 @@
       color: $main-color;
     }
   }
+}
+
+@media (max-width: $width-till-mobile) {
+
 }

@@ -14,6 +14,29 @@
 }
 
 .main-page__advantages {
- margin-right: auto;
- margin-left: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
+
+@media (max-width: $width-till-tablet) {
+  .main-page__advantages-info-wrapper {
+    padding-top: 54px;
+    padding-bottom: 10px;
+
+    background-image: url("../img/advantages-background-tablet@1x.png");
+    background-size: 872px auto;
+    background-position: 211px 90px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../img/advantages-background-tablet@2x.png");
+    }
+  }
+}
+
+@media (max-width: $width-till-mobile) {
+  .main-page__advantages-info-wrapper {
+    padding-top: 54px;
+    padding-bottom: 10px;
+  }
+}
+
