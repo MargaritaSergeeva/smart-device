@@ -1,6 +1,6 @@
 .site-wrapper {
   background-image: url("../img/main-background@1x.png");
-  background-repeat: repeat;
+  background-repeat: repeat-x;
   background-size: 1920px auto;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

@@ -1,0 +1,130 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  max-width: 1265px;
+  padding-top: 89px;
+  padding-bottom: 127px;
+  padding-right: 31px;
+  padding-left: 30px;
+}
+
+.services h2 {
+  width: 97.1%;
+  margin: 0;
+  margin-bottom: 51px;
+  margin-left: auto;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: 400;
+  color: $third-color;
+}
+
+.services ul {
+  @include list-reset;
+  display: flex;
+  width: 97.1%;
+  margin-left: auto;
+}
+
+.services li {
+  width: 31.6%;
+  margin-right: auto;
+}
+
+.services li:last-child {
+  margin-right: 0;
+}
+
+.services a {
+  position: relative;
+
+  display: block;
+  min-height: 620px;
+  padding-top: 50px;
+  padding-bottom: 13px;
+  padding-left: 44px;
+  padding-right: 170px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  text-decoration: none;
+  color: $third-color;
+
+  background-color: $main-color;
+  background-repeat: no-repeat;
+  background-size: 370px auto;
+
+  cursor: pointer;
+  transition: $transition-time $transition-function;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    width: 63px;
+    height: 63px;
+
+    background-color: $second-color;
+    background-image: url("../img/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-size: 8px auto;
+    background-position: center;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+
+    outline: none;
+  }
+}
+
+.services li:first-of-type a {
+  background-image: url("../img/services-background-board@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    // background-image: url("../img/services-background-board@2x.png");
+  }
+}
+
+.services li:nth-of-type(2) a {
+  background-image: url("../img/services-background-board2@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    // background-image: url("../img/services-background-board2@2x.png");
+  }
+}
+
+.services li:nth-of-type(3) a {
+  background-image: url("../img/services-background-board3@1x.png");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    // background-image: url("../img/services-background-board3@2x.png");
+  }
+}
+
+@media (max-width: $width-till-tablet) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    max-width: 1265px;
+    padding-top: 89px;
+    padding-bottom: 127px;
+    padding-right: 31px;
+    padding-left: 30px;
+  }
+
+  .services ul {
+    @include list-reset;
+    display: flex;
+    flex-direction: column;
+    width: 97.1%;
+    margin-left: auto;
+  }
+}
