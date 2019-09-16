@@ -1,11 +1,19 @@
 .main-page__advantages-info-wrapper {
+  padding-top: 112px;
+  padding-bottom: 50px;
+
   background-color: $third-color;
   background-image: url("../img/advantages-background@1x.png");
   background-repeat: no-repeat;
   background-size: 2243px auto;
-  background-position: center 0;
+  background-position: 83% -30px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     // background-image: url("../img/advantages-background@2x.png");
   }
+}
+
+.main-page__advantages {
+ margin-right: auto;
+ margin-left: auto;
 }
