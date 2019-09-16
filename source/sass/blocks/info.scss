@@ -41,6 +41,10 @@
   color: #666666;
 }
 
+.info p span:first-child {
+  display: none;
+}
+
 .info p:last-of-type {
   margin-bottom: 39px;
 }
@@ -49,4 +53,48 @@
   width: 18.3%;
   max-width: 300px;
   margin-right: auto;
+}
+
+@media (max-width: $width-till-tablet) {
+  .info {
+    padding-top: 26px;
+    padding-bottom: 72px;
+    padding-left: 212px;
+    padding-right: 25px;
+
+    &::after {
+      top: 24px;
+      left: -9px;
+
+      width: 252px;
+      height: 362px;
+
+      background-size: 252px auto;
+    }
+  }
+
+  .info h2 {
+    margin-bottom: 25px;
+
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .info p:last-of-type {
+    margin-bottom: 40px;
+  }
+
+  .info p span:first-child {
+    display: inline-flex;
+  }
+
+  .info p span:last-child {
+    display: none;
+  }
+
+  .info__button {
+    width: 34%;
+    max-width: 300px;
+    margin-right: auto;
+  }
 }
