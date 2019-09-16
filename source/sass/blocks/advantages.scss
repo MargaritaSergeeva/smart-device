@@ -22,7 +22,7 @@
   padding-right: 45px;
 
   background-color: $third-color;
-  border: 1px solid #EBEBEB;
+  border: 1px solid #ebebeb;
   border-left: 3px solid $second-color;
 
   cursor: pointer;
@@ -133,7 +133,7 @@
     margin-bottom: 4px;
   }
 
-  .advantages__item--сonfidentiality  .advantages__item-title {
+  .advantages__item--сonfidentiality .advantages__item-title {
     margin-bottom: 14px;
   }
 
@@ -183,7 +183,7 @@
 
   .advantages__item:hover {
     background-color: transparent;
-    border-color: #EBEBEB;
+    border-color: #ebebeb;
     border-left-color: $second-color;
 
     .advantages__item-icon svg {
@@ -215,11 +215,11 @@
     margin-bottom: 11px;
   }
 
-  .advantages__item--сonfidentiality  .advantages__item-title {
+  .advantages__item--сonfidentiality .advantages__item-title {
     margin-bottom: 0;
   }
 
-  .advantages__item--сonfidentiality  .advantages__item-text {
+  .advantages__item--сonfidentiality .advantages__item-text {
     margin-top: -6px;
   }
 

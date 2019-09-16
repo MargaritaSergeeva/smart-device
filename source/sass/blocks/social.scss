@@ -76,6 +76,8 @@
 
 @media (max-width: $width-till-mobile) {
   .social__link {
-    opacity: 1;
+    &:hover {
+      opacity: 1;
+    }
   }
 }
