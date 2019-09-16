@@ -207,6 +207,10 @@
     padding-top: 20px;
     padding-left: 35px;
     padding-right: 90px;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .services li:first-of-type {
