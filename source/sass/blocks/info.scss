@@ -17,9 +17,13 @@
 
     line-height: 0;
 
-    background-image: url("../img/icon-year.svg");
+    background-image: url("../img/info-year@1x.png");
     background-repeat: no-repeat;
     background-size: 220px auto;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../img/info-year@2x.png");
+    }
   }
 }
 

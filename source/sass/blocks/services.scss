@@ -3,7 +3,7 @@
   flex-direction: column;
   max-width: 1265px;
   padding-top: 89px;
-  padding-bottom: 127px;
+  padding-bottom: 97px;
   padding-right: 31px;
   padding-left: 30px;
 }
@@ -32,9 +32,10 @@
 .services li {
   width: 31.6%;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
-.services li:last-child {
+.services li:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -86,7 +87,7 @@
   }
 }
 
-.services li:first-of-type a {
+.services li:nth-of-type(3n + 1) a {
   background-image: url("../img/services-background-board@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -94,7 +95,7 @@
   }
 }
 
-.services li:nth-of-type(2) a {
+.services li:nth-of-type(3n + 2) a {
   background-image: url("../img/services-background-board2@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -102,7 +103,7 @@
   }
 }
 
-.services li:nth-of-type(3) a {
+.services li:nth-of-type(3n) a {
   background-image: url("../img/services-background-board3@1x.png");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -137,7 +138,7 @@
     padding-right: 5px;
   }
 
-  .services li:first-of-type a {
+  .services li:nth-of-type(3n + 1) a {
     background-image: url("../img/services-background-board-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -145,7 +146,7 @@
     }
   }
 
-  .services li:nth-of-type(2) a {
+  .services li:nth-of-type(3n + 2) a {
     background-image: url("../img/services-background-board2-tablet@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -153,7 +154,7 @@
     }
   }
 
-  .services li:nth-of-type(3) a {
+  .services li:nth-of-type(3n) a {
     padding-top: 50px;
     background-image: url("../img/services-background-board3-tablet@1x.png");
 
@@ -179,5 +180,61 @@
 
     font-size: 32px;
     line-height: 45px;
+  }
+}
+
+@media (max-width: $width-till-mobile) {
+  .services {
+    padding-bottom: 34px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .services h2 {
+    margin-bottom: 42px;
+    padding-right: 0;
+    padding-left: 10px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services li {
+    margin-bottom: 30px;
+  }
+
+  .services a {
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 90px;
+  }
+
+  .services li:first-of-type {
+    padding-right: 0;
+  }
+
+  .services li:nth-of-type(3n + 1) a {
+    background-image: url("../img/services-background-board-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../img/services-background-board-mobile@2x.png");
+    }
+  }
+
+  .services li:nth-of-type(3n + 2) a {
+    background-image: url("../img/services-background-board2-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../img/services-background-board2-mobile@2x.png");
+    }
+  }
+
+  .services li:nth-of-type(3n) a {
+    padding-top: 30px;
+    background-image: url("../img/services-background-board3-mobile@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      // background-image: url("../img/services-background-board3-mobile@2x.png");
+    }
   }
 }
