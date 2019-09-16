@@ -98,3 +98,37 @@
     margin-right: auto;
   }
 }
+
+@media (max-width: $width-till-mobile) {
+  .info {
+    padding-top: 38px;
+    padding-bottom: 55px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .info h2 {
+    margin-bottom: 20px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .info p {
+    margin-bottom: 40px;
+  }
+
+  .info p:last-of-type {
+    margin-bottom: 28px;
+  }
+
+  .info__button {
+    width: 63%;
+    max-width: 300px;
+    margin-right: auto;
+  }
+}
