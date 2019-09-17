@@ -7,6 +7,10 @@
   padding-right: 30px;
 }
 
+.feedback-form__close-button {
+  display: none;
+}
+
 .feedback-form__intro {
   width: 570px;
   margin-left: auto;
@@ -157,6 +161,12 @@
   background-position: center;
 }
 
+.feedback-form__button-wrapper input:focus + label::before {
+  opacity: 0.5;
+
+  outline: none;
+}
+
 .feedback-form__button-wrapper label {
   position: relative;
 
@@ -178,13 +188,12 @@
 
     border: 1px solid $third-color;
   }
+}
 
-  &:hover,
-  &:focus {
+.feedback-form__button-wrapper label:hover::before {
     opacity: 0.5;
 
     outline: none;
-  }
 }
 
 @media (max-width: 1200px) {
