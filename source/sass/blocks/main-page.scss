@@ -28,6 +28,40 @@
   margin-left: auto;
 }
 
+.main-page__feedback-form-wrapper {
+  background-color: $second-color;
+  background-image: url("../img/feedback-form-background@1x.png");
+  background-repeat: no-repeat;
+  background-size: 1920px auto;
+  background-position: -50% -60px;
+}
+
+.main-page__feedback-form {
+  margin-right: auto;
+  margin-left: auto;
+
+  background-image: url("../img/paper-airplane@1x.png");
+  background-repeat: no-repeat;
+  background-size: 511px auto;
+  background-position: 40px 161px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    // background-image: url("../img/main-background@2x.png");
+  }
+}
+
+@media (max-width: 1750px) {
+  .main-page__feedback-form-wrapper {
+    background-image: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main-page__feedback-form {
+    background-image: none;
+  }
+}
+
 @media (max-width: $width-till-tablet) {
   .main-page__advantages-info-wrapper {
     padding-top: 54px;
