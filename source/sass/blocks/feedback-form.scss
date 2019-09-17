@@ -52,6 +52,7 @@
   padding-bottom: 18px;
   padding-left: 15px;
 
+  color: $third-color;
   background-color: rgba($third-color, 0.1);
   border: none;
 
@@ -191,9 +192,7 @@
 }
 
 .feedback-form__button-wrapper label:hover::before {
-    opacity: 0.5;
-
-    outline: none;
+  opacity: 0.5;
 }
 
 .feedback-form.feedback-form--modal {
@@ -296,7 +295,7 @@
   margin-top: 0;
 }
 
-.feedback-form__button-wrapper label {
+.feedback-form--modal .feedback-form__button-wrapper label {
   padding-left: 50px;
   padding-right: 30px;
 }
@@ -394,6 +393,7 @@
 
   .feedback-form__input-wrapper {
     flex-direction: column;
+    margin-bottom: 30px;
   }
 
   .feedback-form__intro-title {
@@ -409,10 +409,6 @@
     padding-left: 0;
   }
 
-  .feedback-form__input-wrapper {
-    margin-bottom: 30px;
-  }
-
   .feedback-form__input-wrapper p {
     width: 100%;
     margin-right: 0;
@@ -423,6 +419,13 @@
     min-height: 104px;
   }
 
+  .feedback-form__wrapper input,
+  .feedback-form__wrapper textarea {
+    &:hover {
+      opacity: 1;
+    }
+  }
+
   .feedback-form__button-wrapper {
     flex-direction: column;
   }
@@ -430,6 +433,10 @@
   .feedback-form__button-wrapper button {
     width: 100%;
     margin-bottom: 30px;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 
   .feedback-form__button-wrapper p {
@@ -437,9 +444,19 @@
     margin-top: 0;
   }
 
+  .feedback-form__button-wrapper label:hover::before {
+    opacity: 1;
+  }
+
   .feedback-form.feedback-form--modal {
     max-width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  .feedback-form--modal .feedback-form__close-button {
+    &:hover {
+      opacity: 1;
+    }
   }
 }
