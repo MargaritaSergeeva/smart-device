@@ -8,18 +8,32 @@
   padding-bottom: 200px;
 
   overflow: hidden;
+}
 
-  &::after {
-    content: "Cкролл вниз";
-    position: absolute;
-    bottom: 126px;
-    left: 70px;
+.main-product .main-product__scroll {
+  position: absolute;
+  bottom: 126px;
+  left: 70px;
 
-    font-size: 14px;
-    line-height: 16px;
-    color: rgba($third-color, 0.5);
+  width: auto;
+  margin-left: 0;
+  margin-bottom: 0;
 
-    transform: rotate(-90deg);
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba($third-color, 0.5);
+  text-decoration: none;
+
+  transform: rotate(-90deg);
+
+  cursor: pointer;
+  transition: $transition-time $transition-function;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+
+    outline: none;
   }
 }
 
@@ -32,7 +46,7 @@
 }
 
 .main-product h2 {
-  max-width: 718px;
+  max-width: 726px;
   margin-top: 0;
   margin-bottom: 28px;
 
@@ -89,12 +103,10 @@
   .main-product {
     padding-left: 88px;
     padding-bottom: 153px;
+  }
 
-    overflow: hidden;
-
-    &::after {
-      display: none;
-    }
+  .main-product .main-product__scroll {
+    display: none;
   }
 
   .main-product__text-wrapper {

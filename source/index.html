@@ -52,7 +52,7 @@
           </li>
         </ul>
         <div class="header-contacts__button-wrapper">
-          <a class="header-contacts__button button" href="#">Заказать звонок</a>
+          <button class="header-contacts__button button" type="button">Заказать звонок</button>
         </div>
       </section>
     </header>
@@ -73,6 +73,7 @@
             <img src="img/circuit-board@1x.png" width="705" height="515" alt="Печатные платы">
           </picture>
         </div>
+        <a class="main-product__scroll" href="#">Скролл вниз</a>
       </section>
       <div class="main-page__advantages-info-wrapper">
         <section class="main-page__advantages advantages">
@@ -125,14 +126,14 @@
       </div>
       <section class="main-page__services services">
         <h2>Service Device предлагает следующие товары и услуги</h2>
-        <ul>
-          <li>
+        <ul class="services__list">
+          <li class="services__item services__item--production">
             <a href="#">Производство печатных плат</a>
           </li>
-          <li>
+          <li class="services__item services__item--installation">
             <a href="#">Монтаж печатных плат</a>
           </li>
-          <li>
+          <li class="services__item services__item--accessories">
             <a href="#">Комплектующие для светотехники</a>
           </li>
         </ul>
@@ -209,9 +210,8 @@
           </section>
         </div>
         <div class="page-footer__nav-contacts-wrapper">
-          <section class="page-footer__site-sections site-sections">
+          <section class="page-footer__site-sections site-sections site-sections--close">
             <h2 class="site-sections__title">Разделы сайта</h2>
-            <button class="site-sections__toggle" type="button" aria-label="Показать или скрыть раздел"></button>
             <nav class="site-sections__nav">
               <div class="site-sections__nav-main-block">
                 <a class="site-sections__nav-link" href="#">О компании</a>
@@ -227,8 +227,7 @@
             </nav>
           </section>
           <section class="page-footer__footer-contacts footer-contacts">
-            <h2 class="footer-contacts__title">Наш офис</h2>
-            <button class="footer-contacts__toggle" type="button" aria-label="Показать или скрыть раздел"></button>
+            <h2 class="footer-contacts__title" tabindex="0">Наш офис</h2>
             <div class="footer-contacts__wrapper">
               <address class="footer-contacts__address">г. Мытищи, Олимпийский проспект, д.10</address>
               <a class="footer-contacts__phone" href="tel:+74955894050">+7 (495) 589-40-50</a>

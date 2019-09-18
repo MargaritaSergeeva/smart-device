@@ -76,8 +76,8 @@
     align-items: center;
     min-width: 0;
     width: 100%;
-    padding-top: 25px;
-    padding-bottom: 21px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 15px;
     padding-right: 13px;
 
@@ -85,30 +85,40 @@
   }
 
   .site-sections__nav {
-    display: none;
     width: 100%;
-    margin-top: 27px;
+    padding-top: 5px;
+    padding-bottom: 26px;
+
+    transition: $transition-time $transition-function;
   }
 
   .site-sections__title {
+    position: relative;
+
+    width: 100%;
     margin-bottom: 0;
     margin-right: auto;
-  }
-
-  .site-sections__toggle {
-    display: block;
-    width: 25px;
-    height: 25px;
-    padding: 0;
-
-    background-color: transparent;
-    background-image: url("../img/icon-add.svg");
-    background-repeat: no-repeat;
-    background-size: 16px auto;
-    background-position: center;
-    border: none;
+    padding-top: 29px;
+    padding-bottom: 27px;
 
     transition: $transition-time $transition-function;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 24px;
+      right: 0;
+
+      width: 25px;
+      height: 25px;
+
+      background-image: url("../img/icon-subtract.svg");
+      background-repeat: no-repeat;
+      background-size: 16px auto;
+      background-position: center;
+
+      transition: $transition-time $transition-function;
+    }
 
     &:focus {
       opacity: 0.5;
@@ -120,6 +130,16 @@
   .site-sections__nav-link {
     &:hover {
       opacity: 1;
+    }
+  }
+
+  .site-sections--close .site-sections__nav {
+    display: none;
+  }
+
+  .site-sections--close .site-sections__title {
+    &::after {
+      background-image: url("../img/icon-add.svg");
     }
   }
 }
