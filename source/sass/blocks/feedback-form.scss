@@ -56,15 +56,32 @@
   color: $third-color;
   background-color: rgba($third-color, 0.1);
   border: none;
+  border-radius: 0;
 
   transition: $transition-time $transition-function;
 
   &:hover,
   &:focus {
-    opacity: 0.5;
+    background-color: rgba($third-color, 0.05);
 
     outline: none;
   }
+}
+
+.feedback-form__wrapper input:hover::placeholder {
+  color: rgba($third-color, 0.5);
+}
+
+.feedback-form__wrapper input:focus::placeholder {
+  color: rgba($third-color, 0.5);
+}
+
+.feedback-form__wrapper textarea:hover::placeholder {
+  color: rgba($third-color, 0.5);
+}
+
+.feedback-form__wrapper textarea:focus::placeholder {
+  color: rgba($third-color, 0.5);
 }
 
 .feedback-form__wrapper input::placeholder {

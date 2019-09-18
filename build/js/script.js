@@ -1,8 +1,10 @@
 'use strict';
+
 var modalOpen = document.querySelector('.header-contacts__button');
 var modal = document.querySelector('.modal');
 var siteSections = document.querySelector('.site-sections');
 var footerContacts = document.querySelector('.footer-contacts');
+var userPhonetMainForm = document.querySelector('#main-form-tel');
 var isStorageSupport = true;
 var storageName = '';
 var storagePhone = '';
@@ -38,6 +40,7 @@ var openModal = function () {
   modal.classList.remove('modal--hide');
   modal.classList.add('modal--show');
   document.body.classList.add('no-scroll');
+  document.body.classList.remove('no-scroll');
   document.addEventListener('keydown', onEscDown);
 };
 
@@ -104,6 +107,19 @@ try {
 } catch (err) {
   isStorageSupport = false;
 }
+
+if (userPhone) {
+  var maskMainForm = window.IMask(userPhone, {
+    mask: '+{7}(000)000-00-00',
+  });
+}
+
+if (userPhonetMainForm) {
+  var maskModal = new window.IMask(userPhonetMainForm, {
+    mask: '+{7}(000)000-00-00',
+  });
+}
+
 
 if (modalOpen) {
   modalOpen.addEventListener('click', function () {

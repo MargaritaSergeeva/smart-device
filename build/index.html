@@ -150,15 +150,15 @@
               <div class="feedback-form__input-wrapper">
                 <p class="feedback-form__input-block">
                   <label class="visually-hidden" for="main-form-name">Ваше имя</label>
-                  <input id="main-form-name" type="text" name="user-name" placeholder="Имя">
+                  <input id="main-form-name" type="text" name="user-name" placeholder="Имя" required="">
                 </p>
                 <p class="feedback-form__input-block">
                   <label class="visually-hidden" for="main-form-tel">Ваш номер телефона</label>
-                  <input id="main-form-tel" type="tel" name="user-tel" placeholder="Телефон">
+                  <input id="main-form-tel" type="tel" name="user-tel" placeholder="Телефон" required="">
                 </p>
                 <p class="feedback-form__textarea-block">
                   <label class="visually-hidden" for="main-form-text">Ваш вопрос</label>
-                  <textarea id="main-form-text" name="text" placeholder="Ваш вопрос"></textarea>
+                  <textarea id="main-form-text" name="text" placeholder="Ваш вопрос" required=""></textarea>
                 </p>
               </div>
               <div class="feedback-form__button-wrapper">
@@ -264,15 +264,15 @@
           <div class="feedback-form__input-wrapper">
             <p class="feedback-form__input-block">
               <label class="visually-hidden" for="name">Ваше имя</label>
-              <input id="name" type="text" name="user-name" placeholder="Имя">
+              <input id="name" type="text" name="user-name" placeholder="Имя" required="">
             </p>
             <p class="feedback-form__input-block">
               <label class="visually-hidden" for="tel">Ваш номер телефона</label>
-              <input id="tel" type="tel" name="user-tel" placeholder="Телефон">
+              <input id="tel" type="tel" name="user-tel" placeholder="Телефон" required="">
             </p>
             <p class="feedback-form__textarea-block">
               <label class="visually-hidden" for="text">Ваш вопрос</label>
-              <textarea id="text" name="text" placeholder="Ваш вопрос"></textarea>
+              <textarea id="text" name="text" placeholder="Ваш вопрос" required=""></textarea>
             </p>
           </div>
           <div class="feedback-form__button-wrapper">
@@ -288,6 +288,7 @@
       </div>
     </section>
   </div>
+  <script src="https://unpkg.com/imask"></script>
   <script src="js/script.js"></script>
 </body>
 </html>
