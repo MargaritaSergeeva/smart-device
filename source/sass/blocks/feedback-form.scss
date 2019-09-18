@@ -87,11 +87,15 @@
 .feedback-form__wrapper input::placeholder {
   opacity: 1;
   color: $third-color;
+
+  transition: $transition-time $transition-function;
 }
 
 .feedback-form__wrapper textarea::placeholder {
   opacity: 1;
   color: $third-color;
+
+  transition: $transition-time $transition-function;
 }
 
 .feedback-form__input-wrapper {
@@ -326,25 +330,10 @@
   padding-right: 30px;
 }
 
-@media (max-width: 1200px) {
-  .feedback-form {
-    padding-right: 0;
-  }
-
-  .feedback-form__intro {
-    width: 80%;
-    margin-right: auto;
-  }
-
-  .feedback-form__wrapper {
-    width: 80%;
-    margin-right: auto;
-  }
-}
-
 @media (max-width: $width-till-tablet) {
   .feedback-form {
     padding-top: 80px;
+    padding-right: 0;
     padding-bottom: 103px;
   }
 

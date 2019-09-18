@@ -14,7 +14,7 @@ if (siteSections) {
   var siteSectionsTitle = siteSections.querySelector('.site-sections__title');
 }
 
-if (siteSections) {
+if (footerContacts) {
   var footerContactsTitle = footerContacts.querySelector('.footer-contacts__title');
 }
 
@@ -32,6 +32,7 @@ var onEscDown = function (evt) {
     evt.preventDefault();
     modal.classList.add('modal--hide');
     modal.classList.remove('modal--show');
+    document.body.classList.remove('no-scroll');
     document.removeEventListener('keydown', onEscDown);
   }
 };
@@ -40,7 +41,6 @@ var openModal = function () {
   modal.classList.remove('modal--hide');
   modal.classList.add('modal--show');
   document.body.classList.add('no-scroll');
-  document.body.classList.remove('no-scroll');
   document.addEventListener('keydown', onEscDown);
 };
 

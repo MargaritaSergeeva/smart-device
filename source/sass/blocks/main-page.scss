@@ -52,13 +52,15 @@
 
 @media (max-width: 1750px) {
   .main-page__feedback-form-wrapper {
-    background-image: none;
+    background-size: 100% auto;
+    background-position: 0 50%;
   }
 }
 
 @media (max-width: 1200px) {
   .main-page__feedback-form {
-    background-image: none;
+    background-size: 30% auto;
+    background-position: 10% 50%;
   }
 }
 
@@ -74,6 +76,14 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       // background-image: url("../img/advantages-background-tablet@2x.png");
     }
+  }
+
+  .main-page__feedback-form-wrapper {
+    background-image: none;
+  }
+
+  .main-page__feedback-form {
+    background-image: none;
   }
 }
 

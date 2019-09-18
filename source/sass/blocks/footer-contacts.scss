@@ -102,7 +102,7 @@
     padding-right: 20px;
     padding-bottom: 26px;
 
-    transition: $transition-time $transition-function;
+    transition: $transition-time linear;
   }
 
   .footer-contacts__phone {
@@ -112,7 +112,11 @@
   }
 
   .footer-contacts--close .footer-contacts__wrapper {
-    display: none;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+
+    transition: $transition-time linear;
   }
 
   .footer-contacts--close .footer-contacts__title {

@@ -14,7 +14,7 @@ if (siteSections) {
   var siteSectionsTitle = siteSections.querySelector('.site-sections__title');
 }
 
-if (siteSections) {
+if (footerContacts) {
   var footerContactsTitle = footerContacts.querySelector('.footer-contacts__title');
 }
 
@@ -32,6 +32,7 @@ var onEscDown = function (evt) {
     evt.preventDefault();
     modal.classList.add('modal--hide');
     modal.classList.remove('modal--show');
+    document.body.classList.remove('no-scroll');
     document.removeEventListener('keydown', onEscDown);
   }
 };
@@ -40,7 +41,6 @@ var openModal = function () {
   modal.classList.remove('modal--hide');
   modal.classList.add('modal--show');
   document.body.classList.add('no-scroll');
-  document.body.classList.remove('no-scroll');
   document.addEventListener('keydown', onEscDown);
 };
 
@@ -109,12 +109,14 @@ try {
 }
 
 if (userPhone) {
-  var maskMainForm = window.IMask(userPhone, {
+  // eslint-disable-next-line
+  var maskMainForm = new window.IMask(userPhone, {
     mask: '+{7}(000)000-00-00',
   });
 }
 
 if (userPhonetMainForm) {
+  // eslint-disable-next-line
   var maskModal = new window.IMask(userPhonetMainForm, {
     mask: '+{7}(000)000-00-00',
   });
