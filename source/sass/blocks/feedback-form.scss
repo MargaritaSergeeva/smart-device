@@ -57,7 +57,6 @@
   background-color: rgba($third-color, 0.1);
   border: none;
 
-  cursor: pointer;
   transition: $transition-time $transition-function;
 
   &:hover,
@@ -121,7 +120,6 @@
 }
 
 .feedback-form__button-wrapper button {
-  display: block;
   width: 47.3%;
   margin-right: auto;
   padding-top: 14px;
